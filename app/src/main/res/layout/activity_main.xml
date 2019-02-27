@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Converter Suhu"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/textView"
+        android:text="Celcius"
+        android:textColor="@android:color/background_dark"/>
+
+    <EditText
+        android:id="@+id/editCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@id/textView2"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toRightOf="@id/textView4"
+        android:layout_toEndOf="@id/textView4"
+        android:hint="Masukkan Celcius"/>
+
+    <Button
+        android:id="@+id/btnKonvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCelcius"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-183dp"
+        android:text="CONVERT"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:onClick="konversisuhu"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="82dp"
+        android:text="Kelvin"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView3"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_alignLeft="@id/editCelcius"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Hasil dalam Kelvin"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editFarenheit"
+        android:layout_alignBaseline="@id/editFarenheit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textView3"
+        android:text="Farenheit"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editFarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editKelvin"
+        android:layout_alignStart="@id/editKelvin"
+        android:layout_alignLeft="@id/editKelvin"
+        android:ems="10"
+        android:hint="Hasil dalam Farenheit"
+        android:inputType="number"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/editFarenheit"
+        android:textColor="@android:color/black"
+        android:text="Reamur" />
+
+    <EditText
+        android:id="@+id/editReamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView5"
+        android:layout_alignBottom="@id/textView5"
+        android:layout_alignLeft="@id/editFarenheit"
+        android:layout_alignStart="@id/editFarenheit"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Hasil dalam Reamur"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="EXIT"
+        android:onClick="keluar"/>
+</RelativeLayout>
